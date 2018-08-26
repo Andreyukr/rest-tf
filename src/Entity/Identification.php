@@ -37,7 +37,7 @@ class Identification
     private $passportIssuePlace;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     private $idCode;
 
@@ -99,12 +99,12 @@ class Identification
         return $this;
     }
 
-    public function getIdCode(): ?int
+    public function getIdCode(): ?string
     {
         return $this->idCode;
     }
 
-    public function setIdCode(int $idCode): self
+    public function setIdCode(string $idCode): self
     {
         $this->idCode = $idCode;
 

@@ -22,7 +22,7 @@ class Experience
     private $workPlaceName;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     private $workPlaceTaxNumber;
 
@@ -113,12 +113,12 @@ class Experience
         return $this;
     }
 
-    public function getWorkPlaceTaxNumber(): ?int
+    public function getWorkPlaceTaxNumber(): ?string
     {
         return $this->workPlaceTaxNumber;
     }
 
-    public function setWorkPlaceTaxNumber(int $workPlaceTaxNumber): self
+    public function setWorkPlaceTaxNumber(string $workPlaceTaxNumber): self
     {
         $this->workPlaceTaxNumber = $workPlaceTaxNumber;
 
