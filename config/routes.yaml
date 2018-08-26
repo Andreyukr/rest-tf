@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+applications:
+  path: /applications
+  controller: App\Controller\Web\ApplicationClientController::getApplications
